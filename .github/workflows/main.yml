@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,5 +17,6 @@ jobs:
       - uses: actions/setup-node@v2.1.5
         with:
           node-version: 12.x
+      - run: npm i
       - run: npm run build
       - run: npm run test
