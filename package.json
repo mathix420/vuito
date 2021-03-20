@@ -1,6 +1,6 @@
 {
   "name": "vuito",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Simple, lightweight, full-stack, template-based validation.",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -12,9 +12,8 @@
     "test": "jest",
     "lint:fix": "eslint --fix . --ext \".ts\"",
     "lint": "eslint . --ext \".ts\"",
-    "build:all": "npm run build:module && npm run build",
-    "build:module": "tsc -p ./tsconfig.module.json",
-    "build": "tsc && rollup -c"
+    "build:ci": "tsc && rollup -c",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
