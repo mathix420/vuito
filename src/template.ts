@@ -1,13 +1,13 @@
 import { VTemplateRow, VInputTemplate, VTemplate } from './types';
 
-type VTemplateEntries = Array<Array<string | VTemplateRow | VTemplateRow['check']>>;
-
 export default class {
   [key: string]: VTemplateRow | VTemplate['check'];
 
   constructor(template: VInputTemplate) {
+    // eslint-disable-next-line @typescript-eslint/no-this-alias
+    const self = this;
     // Map each fields checker in template
-    const entries = Object.entries(template as VTemplate).map(([key, tests]) => {
+    Object.entries(template as VTemplate).map(([key, tests]) => {
       // Add `check` method to all fields checkers
       tests.check = function (value, parent) {
         return new Promise(async (resolve, reject) => {
@@ -27,14 +27,8 @@ export default class {
         });
       };
 
-      return [key, tests];
-    }) as VTemplateEntries;
-
-    // Add global checker
-    entries.push(['check', this.check]);
-
-    // Rebuild template
-    return Object.fromEntries(entries);
+      self[key] = tests;
+    });
   }
 
   /**
