@@ -1,0 +1,28 @@
+{
+  "name": "@vuito/vue",
+  "version": "1.0.1",
+  "description": "Simple, lightweight, template-based validation for Vue.js",
+  "main": "index.js",
+  "sideEffects": false,
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathix420/vuito.git"
+  },
+  "keywords": [
+    "vue",
+    "validation",
+    "validate",
+    "vuejs",
+    "vue.js",
+    "mixin",
+    "vuito",
+    "template"
+  ],
+  "author": "Arnaud Gissinger <agissing@student.42.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mathix420/vuito/issues"
+  },
+  "homepage": "https://github.com/mathix420/vuito/tree/master/vue#readme"
+}
