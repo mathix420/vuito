@@ -5,6 +5,7 @@
   "main": "lib/vuito.cjs.js",
   "module": "lib/vuito.esm.js",
   "types": "lib/types/index.d.ts",
+  "sideEffects": false,
   "files": [
     "lib"
   ],
