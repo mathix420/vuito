@@ -21,7 +21,7 @@ export default {
       sourcemap: true,
     },
     {
-      file: packageJson.main.replace(/js$/, 'min.js'),
+      file: packageJson.main.replace(/cjs.js$/, 'min.js'),
       format: 'cjs', // commonJS
       plugins: [terser()], // minified
       sourcemap: true,

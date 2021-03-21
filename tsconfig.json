@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
         "allowJs": false,
-        "target": "es5",
-        "lib": ["esnext"],
-        "module": "esnext",
+        "target": "ES5",
+        "lib": ["ESNext"],
+        "module": "ESNext",
         "moduleResolution": "node",
         "declarationDir": "./lib/types",
         "declaration": true,
@@ -13,8 +13,7 @@
         "rootDir": "./src",
         "strict": true,
         "types": ["jest", "node"],
-        "noEmit": true,
-        "resolveJsonModule": true
+        "noEmit": true
     },
     "include": [
         "src"
