@@ -4,6 +4,7 @@
   "description": "Simple, lightweight, template-based validation for Vue.js",
   "main": "index.js",
   "sideEffects": false,
+  "readme": "../README.md",
   "scripts": {},
   "repository": {
     "type": "git",
@@ -24,5 +25,5 @@
   "bugs": {
     "url": "https://github.com/mathix420/vuito/issues"
   },
-  "homepage": "https://github.com/mathix420/vuito#Vue.js%20Mixin"
+  "homepage": "https://github.com/mathix420/vuito#vuejs-mixin"
 }

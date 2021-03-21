@@ -1,9 +1,7 @@
 # vuito
 Simple, lightweight, full-stack, template-based validation.
 
-![](https://badgen.net/bundlephobia/tree-shaking/vuito) ![](https://badgen.net/bundlephobia/dependency-count/vuito)
-
-![](https://badgen.net/bundlephobia/minzip/vuito) ![](https://badgen.net/packagephobia/install/vuito)
+![](https://badgen.net/bundlephobia/tree-shaking/vuito) ![](https://badgen.net/bundlephobia/dependency-count/vuito) ![](https://badgen.net/bundlephobia/minzip/vuito) ![](https://badgen.net/packagephobia/install/vuito)
 
 ---
 
@@ -16,6 +14,7 @@ Simple, lightweight, full-stack, template-based validation.
 ```bash
 npm i vuito
 ```
+Or via [JsDeliver](https://www.jsdelivr.com/package/npm/vuito?version=latest&path=lib), [UNPKG](https://unpkg.com/browse/vuito@latest/lib/vuito.min.js), or [bundle.run](https://bundle.run/vuito@latest).
 
 # Usage
 
@@ -26,7 +25,7 @@ npm i vuito
 const { regex, required } = require('vuito');
 ```
 
-Vuito is fully tree-shakeable, so you can imports only methods you needs.
+Vuito is fully tree-shakable, so you can import only the methods you need.
 
 **ES6**
 ```javascript
