@@ -7,7 +7,7 @@ Simple, lightweight, full-stack, template-based validation.
 
 ---
 
-⚡ [Installation](#Installation) ⚡ [Usage](#Usage) ⚡ [Vue.js Mixin](#Vue.js%20Mixin) ⚡ [Template Reuse](#Template%20Reuse) ⚡
+⚡ [Installation](#installation) ⚡ [Usage](#usage) ⚡ [Vue.js Mixin](#vuejs-mixin) ⚡ [Template Reuse](#template-reuse) ⚡
 
 ---
 
