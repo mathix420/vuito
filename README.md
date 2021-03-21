@@ -71,6 +71,8 @@ signIn.check({
 
 Use vuito with Vue.js or Nuxt.js as a breeze!
 
+[Nuxt.js Demo](https://vuito.vercel.app/)
+
 ```bash
 npm i @vuito/vue
 ```
