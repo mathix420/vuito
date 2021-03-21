@@ -1,6 +1,6 @@
 {
   "name": "@vuito/vue",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Simple, lightweight, template-based validation for Vue.js",
   "main": "index.js",
   "sideEffects": false,
