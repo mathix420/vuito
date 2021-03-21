@@ -1,9 +1,9 @@
 # vuito
 Simple, lightweight, template-based validation for Fullstack devs
 
-![](https://badgen.net/badgesize/normal/https/unpkg.com/vuito@0.0.7/lib/index.min.js) ![](https://badgen.net/badgesize/gzip/https/unpkg.com/vuito@0.0.7/lib/index.min.js) ![](https://badgen.net/badgesize/brotli/https/unpkg.com/vuito@0.0.7/lib/index.min.js)
+![](https://badgen.net/bundlephobia/tree-shaking/vuito) ![](https://badgen.net/bundlephobia/dependency-count/vuito)
 
-![](https://badgen.net/packagephobia/install/vuito) ![](https://badgen.net/packagephobia/publish/vuito)
+![](https://badgen.net/bundlephobia/minzip/vuito) ![](https://badgen.net/packagephobia/install/vuito)
 
 ```typescript
 import { Template, regex } from 'vuito';
