@@ -1,6 +1,6 @@
 import { VTemplateRow, VInputTemplate, VTemplate } from './types';
 
-export default class {
+export class Template {
   [key: string]: VTemplateRow | VTemplate['check'];
 
   constructor(template: VInputTemplate) {

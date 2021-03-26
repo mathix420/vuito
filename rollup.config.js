@@ -27,6 +27,13 @@ export default {
       sourcemap: true,
     },
     {
+      file: packageJson.main.replace(/cjs.js$/, 'umd.js'),
+      format: 'umd', // Universal Module Definition
+      plugins: [terser()], // minified
+      name: 'vuito',
+      sourcemap: true,
+    },
+    {
       file: packageJson.module,
       format: 'esm', // ES Modules
       sourcemap: true,

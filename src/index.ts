@@ -5,7 +5,4 @@ export { default as minValue } from './validators/minValue';
 export { default as onlyText } from './validators/onlyText';
 export { default as required } from './validators/required';
 export { default as regex } from './validators/regex';
-
-import Template from './template';
-
-export { Template };
+export { Template } from './template';

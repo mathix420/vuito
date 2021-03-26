@@ -1,5 +1,4 @@
-import required from '../src/validators/required';
-import { Template } from '../src';
+import { Template, required } from '../src';
 
 const tmp = new Template({
   test1: [

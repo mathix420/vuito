@@ -5,7 +5,7 @@
         "lib": ["ESNext"],
         "module": "ESNext",
         "moduleResolution": "node",
-        "declarationDir": "./lib/types",
+        "declarationDir": "./lib",
         "declaration": true,
         "esModuleInterop": true,
         "sourceMap": true,
