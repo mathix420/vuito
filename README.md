@@ -1,7 +1,7 @@
 # vuito
 Simple, lightweight, full-stack, template-based validation.
 
-![](https://badgen.net/bundlephobia/tree-shaking/vuito) ![](https://badgen.net/bundlephobia/dependency-count/vuito) ![](https://badgen.net/bundlephobia/minzip/vuito) ![](https://badgen.net/packagephobia/install/vuito)
+[![](https://badgen.net/bundlephobia/tree-shaking/vuito)](https://bundlephobia.com/result?p=vuito) ![](https://badgen.net/bundlephobia/dependency-count/vuito) [![](https://badgen.net/bundlephobia/minzip/vuito)](https://bundlephobia.com/result?p=vuito) [![Maintainability](https://api.codeclimate.com/v1/badges/42b1117477140c6613bb/maintainability)](https://codeclimate.com/github/mathix420/vuito/maintainability)
 
 ---
 
