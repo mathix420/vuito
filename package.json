@@ -1,7 +1,7 @@
 {
   "name": "vuito",
   "version": "1.1.0",
-  "description": "Simple, lightweight, full-stack, template-based validation.",
+  "description": "Simple, lightweight, isomorphic, template-based validation library.",
   "main": "index.cjs.js",
   "module": "index.esm.js",
   "types": "index.d.ts",
@@ -22,9 +22,10 @@
     "url": "git+https://github.com/mathix420/vuito.git"
   },
   "keywords": [
-    "vuejs",
-    "validation",
-    "vue"
+    "isomorphic",
+    "lightweight",
+    "template",
+    "validation"
   ],
   "author": "Arnaud Gissinger <agissing@student.42.fr>",
   "license": "MIT",
