@@ -1,12 +1,14 @@
 {
   "name": "@vuito/vue",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Vue.js mixin wrapper for vuito validation library.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
   "readme": "../README.md",
-  "scripts": {},
+  "scripts": {
+    "prepare": "npm run build --prefix .."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mathix420/vuito.git"
@@ -27,7 +29,8 @@
     "url": "https://github.com/mathix420/vuito/issues"
   },
   "homepage": "https://github.com/mathix420/vuito#vuejs-mixin",
-  "devDependencies": {
-    "@types/vue": "^2.0.0"
+  "peerDependencies": {
+    "@types/vue": "^2.0.0",
+    "@types/vuito": "file:../lib"
   }
 }

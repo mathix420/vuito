@@ -1,4 +1,4 @@
-import { VTemplate } from '../src/types';
+import { Template } from 'vuito/template';
 import { VueConstructor } from 'vue';
 
-export default function (validator: VTemplate): VueConstructor;
+export default function (validator: Template): VueConstructor;
