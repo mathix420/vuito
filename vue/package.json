@@ -1,8 +1,9 @@
 {
   "name": "@vuito/vue",
   "version": "1.0.3",
-  "description": "Simple, lightweight, template-based validation for Vue.js",
+  "description": "Vue.js mixin wrapper for vuito validation library.",
   "main": "index.js",
+  "types": "index.d.ts",
   "sideEffects": false,
   "readme": "../README.md",
   "scripts": {},
@@ -25,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/mathix420/vuito/issues"
   },
-  "homepage": "https://github.com/mathix420/vuito#vuejs-mixin"
+  "homepage": "https://github.com/mathix420/vuito#vuejs-mixin",
+  "devDependencies": {
+    "@types/vue": "^2.0.0"
+  }
 }
