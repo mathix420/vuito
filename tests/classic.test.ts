@@ -1,4 +1,4 @@
-import { Template, required } from '../src';
+import { Template, required } from '../src/vuito';
 
 const tmp = new Template({
   test1: [
