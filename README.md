@@ -1,5 +1,5 @@
 # vuito
-Simple, lightweight, isomorphic, template-based validation.
+Simple, lightweight, isomorphic, template-based validation library.
 
 [![](https://badgen.net/bundlephobia/tree-shaking/vuito)](https://bundlephobia.com/result?p=vuito) ![](https://badgen.net/bundlephobia/dependency-count/vuito) [![](https://badgen.net/bundlephobia/minzip/vuito)](https://bundlephobia.com/result?p=vuito) [![Maintainability](https://api.codeclimate.com/v1/badges/42b1117477140c6613bb/maintainability)](https://codeclimate.com/github/mathix420/vuito/maintainability)
 
@@ -23,6 +23,8 @@ Or via [JsDeliver](https://www.jsdelivr.com/package/npm/vuito?version=latest&pat
 **CJS**
 ```javascript
 const { regex, required } = require('vuito');
+// OR
+const regex = require('vuito/validators/regex.cjs');
 ```
 
 Vuito is fully tree-shakable, so you can import only the methods you need.
@@ -109,3 +111,4 @@ To reuse your validation template you have many solutions.
 1. Create a validation package in your monorepo.
 2. Create a private package in npm, github, gitlab, ...
 3. Any other solution that let you share a js/ts file between projects.
+4. Maybe [SWAP](https://github.com/mathix420/swap) would be a good option to you
