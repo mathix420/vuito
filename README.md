@@ -71,6 +71,8 @@ signIn.check({
 
 # Vue.js Mixin
 
+[![minizipped size](https://badgen.net/bundlephobia/minzip/@vuito/vue)](https://bundlephobia.com/result?p=@vuito/vue)
+
 Use vuito with Vue.js or Nuxt.js as a breeze!
 
 [Nuxt.js Demo](https://vuito.vercel.app/)
