@@ -1,6 +1,6 @@
 {
   "name": "vuito",
-  "version": "1.0.1",
+  "version": "1.0.1-alpha",
   "description": "Simple, lightweight, full-stack, template-based validation.",
   "main": "index.cjs.js",
   "module": "index.esm.js",
