@@ -2,15 +2,14 @@
   "name": "vuito",
   "version": "1.0.1",
   "description": "Simple, lightweight, full-stack, template-based validation.",
-  "main": "lib/vuito.cjs.js",
-  "module": "lib/vuito.esm.js",
-  "types": "lib/index.d.ts",
+  "main": "index.cjs.js",
+  "module": "index.esm.js",
+  "types": "index.d.ts",
   "sideEffects": false,
-  "files": [
-    "lib"
-  ],
+  "files": ["*"],
   "scripts": {
     "test": "jest",
+    "postbuild": "cp LICENSE README.md package.json lib/",
     "lint:fix": "eslint --fix . --ext \".ts\"",
     "lint": "eslint . --ext \".ts\"",
     "build": "rollup -c",
