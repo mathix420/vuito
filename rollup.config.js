@@ -1,3 +1,4 @@
+import renameNodeModules from 'rollup-plugin-rename-node-modules';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import typescript from 'rollup-plugin-typescript2';
 import resolve from '@rollup/plugin-node-resolve';
@@ -16,33 +17,39 @@ export default {
   input: 'src/index.ts',
   output: [
     {
-      file: packageJson.main,
+      dir: 'lib',
       format: 'cjs', // commonJS
+      exports: 'auto',
       sourcemap: true,
+      entryFileNames: '[name].cjs.js',
+      preserveModulesRoot: 'src',
+      preserveModules: true,
     },
     {
-      file: packageJson.main.replace(/cjs.js$/, 'min.js'),
+      file: 'lib/vuito.min.js',
       format: 'cjs', // commonJS
       plugins: [terser()], // minified
       sourcemap: true,
     },
     {
-      file: packageJson.main.replace(/cjs.js$/, 'umd.js'),
+      file: 'lib/vuito.umd.js',
+      name: 'vuito',
       format: 'umd', // Universal Module Definition
       plugins: [terser()], // minified
-      name: 'vuito',
       sourcemap: true,
     },
     {
-      file: packageJson.module,
+      dir: 'lib',
       format: 'esm', // ES Modules
       sourcemap: true,
+      entryFileNames: '[name].esm.js',
+      preserveModulesRoot: 'src',
+      preserveModules: true,
     },
   ],
   plugins: [
     peerDepsExternal(),
     resolve(),
-    commonjs(),
     typescript({
       useTsconfigDeclarationDir: true,
     }),
@@ -53,6 +60,7 @@ export default {
     cleanup({
       comments: 'none',
     }),
+    renameNodeModules('ext'),
   ],
   external: Object.keys(globals),
 };
