@@ -1,10 +1,10 @@
 {
   "name": "vuito",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple, lightweight, isomorphic, template-based validation library.",
-  "main": "index.cjs.js",
-  "module": "index.esm.js",
-  "types": "index.d.ts",
+  "main": "vuito.cjs.js",
+  "module": "vuito.esm.js",
+  "types": "vuito.d.ts",
   "sideEffects": false,
   "files": [
     "*"

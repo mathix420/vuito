@@ -14,7 +14,7 @@ Simple, lightweight, isomorphic, template-based validation library.
 ```bash
 npm i vuito
 ```
-Or via [JsDeliver](https://www.jsdelivr.com/package/npm/vuito?version=latest&path=lib), [UNPKG](https://unpkg.com/browse/vuito@latest/lib/vuito.min.js), or [bundle.run](https://bundle.run/vuito@latest).
+Or via [JsDeliver](https://www.jsdelivr.com/package/npm/vuito?version=latest), [UNPKG](https://unpkg.com/browse/vuito@latest/vuito.min.js), or [bundle.run](https://bundle.run/vuito@latest).
 
 # Usage
 

@@ -14,7 +14,7 @@ const globals = {
 };
 
 export default {
-  input: 'src/index.ts',
+  input: 'src/vuito.ts',
   output: [
     {
       dir: 'lib',
