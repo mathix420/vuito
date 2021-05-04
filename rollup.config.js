@@ -1,3 +1,4 @@
+import renameNodeModules from 'rollup-plugin-rename-node-modules';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import typescript from 'rollup-plugin-typescript2';
 import resolve from '@rollup/plugin-node-resolve';
@@ -49,7 +50,6 @@ export default {
   plugins: [
     peerDepsExternal(),
     resolve(),
-    commonjs(),
     typescript({
       useTsconfigDeclarationDir: true,
     }),
@@ -60,6 +60,7 @@ export default {
     cleanup({
       comments: 'none',
     }),
+    renameNodeModules('ext'),
   ],
   external: Object.keys(globals),
 };
