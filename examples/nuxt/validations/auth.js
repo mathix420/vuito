@@ -1,6 +1,6 @@
 import { Template, required, minLength, maxLength } from 'vuito';
 
-const signIn = new Template({
+export const signIn = new Template({
   username: [
     { test: required, message: 'Please enter a username.' },
     { test: minLength(3), message: 'Username is too short.' },
@@ -11,5 +11,3 @@ const signIn = new Template({
     { test: minLength(12), message: 'Password is too short.' },
   ],
 });
-
-export { signIn };

@@ -73,7 +73,7 @@ signIn.check({
 
 [![minizipped size](https://badgen.net/bundlephobia/minzip/@vuito/vue)](https://bundlephobia.com/result?p=@vuito/vue)
 
-Use vuito with Vue.js or Nuxt.js as a breeze!
+Use vuito with Vue.js or Nuxt.js like a breeze!
 
 [Nuxt.js Demo](https://vuito.vercel.app/)
 
@@ -97,7 +97,7 @@ npm i @vuito/vue
 </template>
 
 <script>
-import { signIn } from './validations/auth';
+import { signIn } from '~/validations/auth';
 import Vuito from '@vuito/vue';
 
 export default {

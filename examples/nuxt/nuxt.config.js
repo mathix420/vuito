@@ -1,5 +1,6 @@
 export default {
   target: 'static',
+  components: true,
   head: {
     title: 'Vuito Nuxt Demo',
     htmlAttrs: {
@@ -12,5 +13,4 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  components: true,
 };
