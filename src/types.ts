@@ -5,7 +5,7 @@ export type VRow = {
 };
 
 export type VTemplateRow = Array<VRow> & {
-  check(value: unknown, parent: Record<string, unknown>): Promise<void>;
+  check(value: unknown, parent?: Record<string, unknown>): Promise<void>;
 };
 
 export type VInputTemplate = {
