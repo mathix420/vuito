@@ -1,6 +1,6 @@
 {
   "name": "@vuito/vue",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Vue.js mixin wrapper for vuito validation library.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/mathix420/vuito#vuejs-mixin",
   "peerDependencies": {
-    "@types/vue": "^2.0.0",
-    "@types/vuito": "*"
+    "vue": "^2.0.0",
+    "vuito": "*"
   }
 }
