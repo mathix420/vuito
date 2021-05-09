@@ -2,12 +2,12 @@ name: Publish Package
 
 on:
   release:
-    types: [created]
-
+    types: [published, edited, released]
   workflow_dispatch:
 
 jobs:
   build:
+    if: "!github.event.release.prerelease"
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
