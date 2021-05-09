@@ -16,5 +16,6 @@ jobs:
         uses: battila7/get-version-action@v2
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
+          prerelease: false
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           title: "${{ steps.get_version.outputs.version }}"
