@@ -15,5 +15,5 @@ jobs:
           draft: true
           prerelease: false
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          # automatic_release_tag: "alpha"
+          automatic_release_tag: "alpha"
           title: "alpha"
