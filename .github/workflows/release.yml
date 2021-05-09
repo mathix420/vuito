@@ -1,22 +1,19 @@
-name: Release
+name: Release Draft
 
 on:
   push:
     branches: [ master ]
-    tags: [ "v*" ]
 
 jobs:
   tagged-release:
-    name: "Tagged Release"
+    name: "Release Draft"
     runs-on: "ubuntu-latest"
 
     steps:
-      - name: Get latest release version number
-        id: get_version
-        uses: battila7/get-version-action@v2
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          prerelease: true
+          draft: true
+          prerelease: false
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "${{ steps.get_version.outputs.version }}"
-          title: "${{ steps.get_version.outputs.version }}"
+          # automatic_release_tag: "alpha"
+          title: "alpha"
