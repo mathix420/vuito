@@ -15,7 +15,7 @@ export class Template {
             // Conditional check
             if (onlyIf && parent && !onlyIf(parent)) return;
 
-            if (value && value instanceof String) {
+            if (value && typeof value === 'string') {
               value = value.trim();
             }
 
@@ -38,7 +38,7 @@ export class Template {
     return new Promise(async (resolve, reject) => {
       await Object.entries(this).map(([key, tests]) => {
         // Skip `check` method in the template
-        if (key === 'check') return;
+        // if (key === 'check') return;
 
         // Perform all sub tests, if any fail, the exit with the error message
         (tests as VTemplateRow).check(object[key], object).catch(reject);

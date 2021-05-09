@@ -34,3 +34,22 @@ describe('template methods', () => {
     await expect((<VTemplateRow>demo.two).check('any', {})).resolves.toBeUndefined();
   });
 });
+
+describe('test parameter', () => {
+  const myTest = jest.fn(() => true);
+  const demo = new Template({
+    one: [{ test: myTest, message: 'Never shown' }],
+  });
+
+  test('string is trimmed', async () => {
+    const str = '  test  1  ';
+    await (<VTemplateRow>demo.one).check(str);
+    expect(myTest).toBeCalledWith(str.trim());
+  });
+
+  test('string is trimmed 2', async () => {
+    const str = '   ';
+    await (<VTemplateRow>demo.one).check(str);
+    expect(myTest).toBeCalledWith(str.trim());
+  });
+});
