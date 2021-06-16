@@ -33,6 +33,12 @@ Vuito is fully tree-shakable, so you can import only the methods you need.
 ```javascript
 import { regex, required } from 'vuito';
 ```
+
+**Directly in the browser**
+```javascript
+import { regex, required } from 'https://esm.run/vuito';
+```
+
 ## Templates
 With templates you can easily create and reuse validations.
 

@@ -5,6 +5,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import cleanup from 'rollup-plugin-cleanup';
+import path from 'path';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const packageJson = require('./package.json');
@@ -12,6 +13,13 @@ const packageJson = require('./package.json');
 const globals = {
   ...packageJson.devDependencies,
 };
+
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+function extractChunks(id) {
+  if (id.includes('tslib')) return 'template';
+  if (id.includes('/validators/')) return 'validators/' + path.parse(id).name;
+  return path.parse(id).name;
+}
 
 export default {
   input: 'src/vuito.ts',
@@ -21,13 +29,16 @@ export default {
       format: 'cjs', // commonJS
       exports: 'auto',
       sourcemap: true,
-      entryFileNames: '[name].cjs.js',
+      esModule: false,
       preserveModulesRoot: 'src',
-      preserveModules: true,
+      manualChunks: extractChunks,
+      entryFileNames: '[name].cjs.js',
+      chunkFileNames: '[name].cjs.js',
     },
     {
       file: 'lib/vuito.min.js',
       format: 'cjs', // commonJS
+      esModule: false,
       plugins: [terser()], // minified
       sourcemap: true,
     },
@@ -42,9 +53,10 @@ export default {
       dir: 'lib',
       format: 'esm', // ES Modules
       sourcemap: true,
-      entryFileNames: '[name].esm.js',
       preserveModulesRoot: 'src',
-      preserveModules: true,
+      manualChunks: extractChunks,
+      entryFileNames: '[name].esm.js',
+      chunkFileNames: '[name].esm.js',
     },
   ],
   plugins: [
