@@ -26,5 +26,4 @@ jobs:
         env:
           CC_TEST_REPORTER_ID: d7cc2b984737376a118b540a6aa72447f3fc6fbb705988584b33dd0c8fbcb856
         with:
-          coverageLocations: |
-            ${{github.workspace}}/packages/vuito/coverage/lcov.info:lcov
+          workingDirectory: ${{github.workspace}}/packages/vuito
