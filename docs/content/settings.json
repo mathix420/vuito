@@ -1,0 +1,10 @@
+{
+  "title": "Vuito",
+  "url": "https://vuito.vercel.app/",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "mathix420/vuito",
+  "twitter": "@W110100100"
+}

@@ -16,12 +16,14 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2.1.5
         with:
-          node-version: 12.x
+          node-version: '15.x'
 
       - run: npm i
-      - run: npm run build
-      - run: npm run test:ci
+      - run: lerna bootstrap
+      - run: lerna run test:ci
 
       - uses: paambaati/codeclimate-action@v2.7.5
         env:
           CC_TEST_REPORTER_ID: d7cc2b984737376a118b540a6aa72447f3fc6fbb705988584b33dd0c8fbcb856
+        with:
+          workingDirectory: ${{github.workspace}}/packages/vuito

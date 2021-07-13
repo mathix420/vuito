@@ -1,26 +1,15 @@
 {
+    // extend your base config to share compilerOptions, etc
+    "extends": "./tsconfig.json",
     "compilerOptions": {
-        "allowJs": false,
-        "target": "ES5",
-        "lib": ["ESNext"],
-        "module": "ESNext",
-        "moduleResolution": "node",
-        "declarationDir": "./lib",
-        "declaration": true,
-        "esModuleInterop": true,
-        "sourceMap": true,
-        "outDir": "./lib",
-        "rootDir": "./src",
-        "strict": true,
-        "types": ["jest", "node"],
-        "noEmit": true
+      // ensure that nobody can accidentally use this config for a build
+      "noEmit": true
     },
     "include": [
-        "src"
-    ],
-    "exclude": [
-        "node_modules",
-        "**/tests/*",
-        "**/lib/*"
+      // whatever paths you intend to lint
+      "src",
+      "tests",
+      "tools"
     ]
-}
+  }
+  

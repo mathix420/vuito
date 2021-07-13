@@ -1,0 +1,15 @@
+{
+  "name": "vuito-docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt -H 0",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/content-theme-docs": "0.10.1",
+    "nuxt": "^2.15.7"
+  }
+}
