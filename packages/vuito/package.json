@@ -15,7 +15,7 @@
   "scripts": {
     "test": "jest",
     "test:ci": "jest --coverage",
-    "postbuild": "cp LICENSE README.md package.json lib/",
+    "prepack": "cp LICENSE README.md package.json lib/",
     "lint:fix": "eslint --fix . --ext \".ts\"",
     "lint": "eslint . --ext \".ts\"",
     "build": "rollup -c",
