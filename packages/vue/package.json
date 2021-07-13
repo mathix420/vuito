@@ -1,6 +1,6 @@
 {
   "name": "@vuito/vue",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "Vue.js mixin wrapper for vuito validation library.",
   "main": "index.js",
   "types": "index.d.ts",
