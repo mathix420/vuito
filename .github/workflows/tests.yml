@@ -19,8 +19,8 @@ jobs:
           node-version: 12.x
 
       - run: npm i
-      - run: npm run build
-      - run: npm run test:ci
+      - run: lerna bootstrap
+      - run: lerna run test:ci
 
       - uses: paambaati/codeclimate-action@v2.7.5
         env:
