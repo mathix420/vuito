@@ -5,9 +5,9 @@
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
-  "readme": "../README.md",
+  "readme": "../../README.md",
   "scripts": {
-    "prepare": "npm run build --prefix .."
+    "prepare": "npm run build --prefix ../vuito"
   },
   "repository": {
     "type": "git",
