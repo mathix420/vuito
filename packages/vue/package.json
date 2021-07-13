@@ -5,10 +5,6 @@
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
-  "readme": "../../README.md",
-  "scripts": {
-    "prepare": "npm run build --prefix ../vuito"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mathix420/vuito.git"
