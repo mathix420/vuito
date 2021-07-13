@@ -2,7 +2,6 @@ name: Release Draft
 
 on:
   push:
-    branches: [ master ]
     tags: [ "v*" ]
 
 jobs:
@@ -13,6 +12,6 @@ jobs:
     steps:
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          draft: false
+          draft: true
           prerelease: false
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
