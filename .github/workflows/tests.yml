@@ -19,6 +19,7 @@ jobs:
           node-version: 12.x
 
       - run: npm i
+      - run: lerna exec npm install
       - run: lerna bootstrap --no-ci
       - run: lerna run test:ci
 
