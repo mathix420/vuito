@@ -1,7 +1,13 @@
 {
   "name": "vuito-monorepo",
   "private": true,
-  "workspaces": ["./packages/*"],
+  "workspaces": [
+    "./packages/*"
+  ],
+  "engines": {
+    "node": ">=12",
+    "npm": "7.x"
+  },
   "devDependencies": {
     "lerna": "^4.0.0"
   },
