@@ -3,6 +3,7 @@ name: Release Draft
 on:
   push:
     branches: [ master ]
+    tags: [ "v*" ]
 
 jobs:
   tagged-release:
@@ -12,8 +13,6 @@ jobs:
     steps:
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          draft: true
+          draft: false
           prerelease: false
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "alpha"
-          title: "alpha"
