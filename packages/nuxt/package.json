@@ -1,0 +1,29 @@
+{
+  "name": "@vuito/nuxt",
+  "version": "1.2.2",
+  "description": "Nuxt.js plugin for vuito validation library.",
+  "keywords": [
+    "nuxt",
+    "nuxt.js",
+    "validation",
+    "validate",
+    "nuxtjs",
+    "plugin",
+    "template",
+    "vuito"
+  ],
+  "author": "Arnaud Gissinger <agissing@student.42.fr>",
+  "homepage": "https://github.com/mathix420/vuito/tree/master/packages/nuxt",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathix420/vuito.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/mathix420/vuito/issues"
+  }
+}
