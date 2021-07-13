@@ -6,6 +6,9 @@
   "module": "vuito.esm.js",
   "types": "vuito.d.ts",
   "sideEffects": false,
+  "publishConfig": {
+    "directory": "lib"
+  },
   "files": [
     "*"
   ],
