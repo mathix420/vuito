@@ -13,17 +13,6 @@ module.exports = function (validator) {
           .then(() => delete this.errors[event.target.id])
           .catch((err) => (this.errors[event.target.id] = err));
       },
-    },
-    watch: {
-      fields: {
-        deep: true,
-        handler() {
-          this.$emit('update', {
-            fields: this.fields,
-            errors: this.errors,
-          });
-        },
-      },
-    },
+    }
   };
 };
