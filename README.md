@@ -27,7 +27,7 @@ const { regex, required } = require('vuito');
 const regex = require('vuito/validators/regex.cjs');
 ```
 
-Vuito is fully tree-shakable, so you can import only the methods you need.
+Vuito is fully tree-shakable, so you can import only methods you need.
 
 **ES6**
 ```javascript

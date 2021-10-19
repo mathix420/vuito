@@ -1,0 +1,96 @@
+---
+title: Validators
+description: ''
+position: 21
+category: API Reference
+---
+
+Vuito implements some basic validators, to speed up your development.
+
+This package is 100% tree-shakeable so you if you don't use thems, they will not take space.
+
+```js
+import { regex, required } from 'vuito';
+// OR
+const { regex, required } = require('vuito');
+// OR
+const regex = require('vuito/validators/regex.cjs');
+```
+
+## `required` 
+
+> Check if the input value is truthy.
+
+**Usage:**
+```js
+{ test: required, message: "Can't be empty." }
+```
+
+## `minLength` 
+
+> Check if string/array length is at least `n` long.
+
+**Usage:**
+```js
+{ test: minLength(5), message: 'Should be at least 5 long.' }
+```
+
+## `maxLength` 
+
+> Check if string/array length is at most `n` long.
+
+**Usage:**
+```js
+{ test: maxLength(5), message: 'Should be at most 5 long.' }
+```
+
+## `minValue` 
+
+> Check if string/number value is `>= n`.
+
+**Usage:**
+```js
+{ test: minValue(5), message: 'Should be less or equal to 5.' }
+```
+
+## `maxValue` 
+
+> Check if string/number value is `<= n`.
+
+**Usage:**
+```js
+{ test: maxValue(5), message: 'Should be more or equal to 5.' }
+```
+
+## `minValue` 
+
+> Check if string/number value is `>= n`.
+
+**Usage:**
+```js
+{ test: minValue(5), message: 'Should be less or equal to 5.' }
+```
+
+## `onlyText` 
+
+> Check if string input contains only alphanumeric chars or white spaces.
+
+<alert type="info">
+
+Handle diactirics removal.
+
+</alert>
+
+**Usage:**
+```js
+{ test: onlyText, message: 'Should be more or equal to 5.' }
+```
+
+## `regex` 
+
+> Check if string input match the given regex.
+
+**Usage:**
+```js
+{ test: regex(/^ac?b$/i), message: 'Should be "ab" or "acb".' }
+```

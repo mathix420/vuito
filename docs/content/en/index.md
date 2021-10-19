@@ -1,27 +1,49 @@
 ---
-title: Introduction
+title: Get Started
 description: ''
-position: 1
+position: 10
 category: ''
 features:
-  - Feature 1
-  - Feature 2
-  - Feature 3
+  - Easy to set up
+  - Lightweight (< 2KB)
+  - Isomorphic
+  - Template-based
+  - No dependencies
+  - Actively maintained
 ---
 
-<img src="/preview.png" class="light-img" width="1280" height="640" alt=""/>
-<img src="/preview-dark.png" class="dark-img" width="1280" height="640" alt=""/>
+Simple, lightweight, isomorphic, template-based validation library.
 
-[Module]() for [NuxtJS](https://nuxtjs.org).
+If you want to play with the library, you can do so [right here](https://runkit.com/mathix420/vuito-example).
 
-<alert type="success">
+## Installation
 
-Your documentation has been created successfully!
+Add `vuito` dependency to your project:
 
-</alert>
+<code-group>
+  <code-block label="NPM" active>
+
+  ```bash
+  npm install vuito
+  ```
+
+  </code-block>
+  <code-block label="Yarn">
+
+  ```bash
+  yarn add vuito
+  ```
+
+  </code-block>
+</code-group>
 
 ## Features
 
 <list :items="features"></list>
 
-<p class="flex items-center">Enjoy light and dark mode:&nbsp;<app-color-switcher class="inline-flex ml-2"></app-color-switcher></p>
+## Notes
+
+<p class="flex items-center">
+  Enjoy light and dark mode:&nbsp;
+  <app-color-switcher class="inline-flex ml-2"></app-color-switcher>
+</p>
