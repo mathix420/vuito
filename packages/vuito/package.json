@@ -29,7 +29,9 @@
     "isomorphic",
     "lightweight",
     "template",
-    "validation"
+    "validation",
+    "backend",
+    "frontend"
   ],
   "author": "Arnaud Gissinger <agissing@student.42.fr>",
   "license": "MIT",

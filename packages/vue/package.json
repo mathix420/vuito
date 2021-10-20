@@ -17,7 +17,8 @@
     "vue.js",
     "mixin",
     "vuito",
-    "template"
+    "template",
+    "frontend"
   ],
   "author": "Arnaud Gissinger <agissing@student.42.fr>",
   "license": "MIT",
