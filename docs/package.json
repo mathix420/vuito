@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@nuxt/content-theme-docs": "^0.10.1",
-    "nuxt": "^2.15.8"
+    "@vuito/vue": "^1.2.0",
+    "nuxt": "^2.15.8",
+    "vuito": "^1.2.1"
   }
 }

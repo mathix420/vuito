@@ -14,7 +14,9 @@ features:
 
 Simple, lightweight, isomorphic, template-based validation library.
 
-If you want to play with the library, you can do so [right here](https://runkit.com/mathix420/vuito-example).
+If you want to see a demo of this library, go to [the demo section](/demo).
+
+And if you want to play with the library, you can do so [right here](https://runkit.com/mathix420/vuito-example).
 
 ## Installation
 
