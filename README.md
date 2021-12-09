@@ -40,7 +40,7 @@ import { regex, required } from 'https://esm.run/vuito';
 ```
 
 ## Templates
-With templates you can easily create and reuse validations.
+With templates, you can easily create and reuse validations.
 
 `validations/auth.ts`:
 ```typescript
@@ -81,7 +81,7 @@ signIn.check({
 
 Use vuito with Vue.js or Nuxt.js like a breeze!
 
-[Nuxt.js Demo](https://vuito.vercel.app/)
+[Nuxt.js Demo](https://vuito.vercel.app/demo)
 
 ```bash
 npm i @vuito/vue
@@ -117,6 +117,6 @@ export default {
 To reuse your validation template you have many solutions.
 
 1. Create a validation package in your monorepo.
-2. Create a private package in npm, github, gitlab, ...
-3. Any other solution that let you share a js/ts file between projects.
-4. Maybe [SWAP](https://github.com/mathix420/swap) would be a good option to you
+2. Create a private package in NPM, GitHub, GitLab, ...
+3. Any other solution that lets you share a js/ts file between projects.
+4. Maybe [SWAP](https://github.com/mathix420/swap) would be a good option for you
