@@ -6,7 +6,7 @@
   ],
   "engines": {
     "node": ">=12",
-    "npm": "7.x"
+    "npm": ">=7.x"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
