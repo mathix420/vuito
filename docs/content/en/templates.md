@@ -25,9 +25,9 @@ Simply regroup your forms data in an object to match the template structure, and
 Here we use `~/validations/`.
 
 ```js[~/validations/auth.js]
-import { Template, required, minLength, maxLength } from 'vuito';
+import { templateify, required, minLength, maxLength } from 'vuito';
 
-export const signin = new Template({
+export const signin = templateify({
   username: [
     { test: required, message: 'Please enter a username.' },
     { test: minLength(3), message: 'Username is too short.' },

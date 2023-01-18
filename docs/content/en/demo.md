@@ -60,9 +60,9 @@ export default {
 ## Validation template
 
 ```javascript[~/validations/auth.js]
-import { Template, required, minLength, maxLength } from 'vuito';
+import { templateify, required, minLength, maxLength } from 'vuito';
 
-export const signIn = new Template({
+export const signIn = templateify({
   username: [
     { test: required, message: 'Please enter a username.' },
     { test: minLength(3), message: 'Username is too short.' },
