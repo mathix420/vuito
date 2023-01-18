@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/mathix420/vuito#vuejs-mixin",
   "peerDependencies": {
-    "vue": "^2.0.0",
+    "vue": ">=2.0.0",
     "vuito": "*"
   }
 }
