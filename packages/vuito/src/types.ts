@@ -13,7 +13,7 @@ export type VInputTemplate = {
 };
 
 export type VKeys = {
-  [key: string]: VTemplateRow;
+  readonly [key: string]: VTemplateRow;
 };
 
 export type VTemplate = VKeys & {
