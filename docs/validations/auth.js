@@ -1,4 +1,4 @@
-import { templateify, required, minLength, maxLength } from 'vuito/lib/vuito.esm';
+import { templateify, required, minLength, maxLength } from 'vuito';
 
 export const signIn = templateify({
   username: [
