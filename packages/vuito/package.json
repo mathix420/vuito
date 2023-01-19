@@ -2,9 +2,9 @@
   "name": "vuito",
   "version": "2.0.1",
   "description": "Simple, lightweight, isomorphic, and template-based validation library.",
-  "main": "vuito.cjs.js",
-  "module": "vuito.esm.js",
-  "types": "vuito.d.ts",
+  "main": "lib/vuito.cjs.js",
+  "module": "lib/vuito.esm.js",
+  "types": "lib/vuito.d.ts",
   "sideEffects": false,
   "publishConfig": {
     "directory": "lib"
