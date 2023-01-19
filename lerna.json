@@ -1,14 +1,10 @@
 {
-  "packages": [
-    "packages/*"
-  ],
-  "version": "2.0.1",
+  "packages": ["packages/*"],
+  "version": "2.0.2",
   "useWorkspaces": true,
   "command": {
     "version": {
-      "ignoreChanges": [
-        "**/*.md"
-      ]
+      "ignoreChanges": ["**/*.md"]
     }
   }
 }
