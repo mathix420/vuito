@@ -6,9 +6,6 @@
   "module": "lib/vuito.esm.js",
   "types": "lib/vuito.d.ts",
   "sideEffects": false,
-  "publishConfig": {
-    "directory": "lib"
-  },
   "files": [
     "*"
   ],
@@ -50,5 +47,6 @@
   },
   "jest": {
     "preset": "ts-jest"
-  }
+  },
+  "gitHead": "7cb817894e44757a73c4f859084d978112b06691"
 }
