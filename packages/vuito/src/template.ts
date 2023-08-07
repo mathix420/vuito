@@ -1,4 +1,4 @@
-import { VTemplateRow, VInputTemplate, VTemplate, VRow, VKeys } from './types';
+import type { VTemplateRow, VInputTemplate, VTemplate, VRow, VKeys } from './types';
 
 
 function getCheckRowFct(tests: VRow[]): VTemplateRow['check'] {

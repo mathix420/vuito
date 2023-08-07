@@ -3,8 +3,8 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import typescript from 'rollup-plugin-typescript2';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import { terser } from 'rollup-plugin-terser';
 import cleanup from 'rollup-plugin-cleanup';
+import terser from '@rollup/plugin-terser';
 import path from 'path';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -21,6 +21,9 @@ function extractChunks(id) {
   return path.parse(id).name;
 }
 
+/**
+ * @type {import('rollup').RollupOptions}
+ */
 export default {
   input: 'src/vuito.ts',
   output: [
