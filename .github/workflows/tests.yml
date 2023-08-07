@@ -19,7 +19,6 @@ jobs:
           node-version: 'lts/*'
 
       - run: npm i
-      - run: lerna bootstrap
       - run: lerna run test:ci
 
       - uses: paambaati/codeclimate-action@v5
