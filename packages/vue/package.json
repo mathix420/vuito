@@ -2,8 +2,15 @@
   "name": "@vuito/vue",
   "version": "2.0.3",
   "description": "Vue.js mixin wrapper for vuito validation library.",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "prepublishOnly": "mkdir -p dist && npm run postpublish && cp ../../README.md ../../LICENSE . && cp index.* dist/.",
+    "postpublish": "rm -f README.md LICENSE"
+  },
   "sideEffects": false,
   "repository": {
     "type": "git",
