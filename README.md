@@ -18,6 +18,8 @@ Or via [JsDeliver](https://www.jsdelivr.com/package/npm/vuito?version=latest), [
 
 # Usage
 
+Full documentation ➡️ https://vuito.vercel.app
+
 ## Imports
 
 **CJS**
@@ -77,11 +79,13 @@ signIn.check({
 
 # Vue.js Mixin
 
+> ⚠️ Only supporting Vue2 currently ⚠️
+
 [![minizipped size](https://badgen.net/bundlephobia/minzip/@vuito/vue)](https://bundlephobia.com/result?p=@vuito/vue)
 
 Use vuito with Vue.js or Nuxt.js like a breeze!
 
-[Nuxt.js Demo](https://vuito.vercel.app/demo)
+<!-- [Nuxt.js Demo](https://vuito.vercel.app/demo) -->
 
 ```bash
 npm i @vuito/vue

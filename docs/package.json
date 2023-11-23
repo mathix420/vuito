@@ -1,17 +1,21 @@
 {
-  "name": "vuito-docs",
-  "version": "1.0.0",
+  "name": "docus-starter",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt -H 0",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "lint": "eslint ."
   },
-  "dependencies": {
-    "@nuxt/content-theme-docs": "^0.10.1",
-    "@vuito/vue": "^2.0.3",
-    "nuxt": "^2.15.8",
-    "vuito": "^2.0.2"
+  "devDependencies": {
+    "@nuxt-themes/docus": "^1.15.0",
+    "@nuxt/devtools": "^1.0.3",
+    "@nuxt/eslint-config": "^0.2.0",
+    "@types/node": "^20.9.4",
+    "eslint": "^8.54.0",
+    "nuxt": "^3.8.2",
+    "vuito": "^2.0.6"
   }
 }
