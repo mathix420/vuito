@@ -2,7 +2,7 @@ export default defineAppConfig({
   docus: {
     title: 'Vuito',
     description: 'Simple, lightweight, isomorphic, template-based validation library.',
-    image: 'https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png',
+    image: 'https://github.com/mathix420/vuito/blob/master/docs/public/cover.png?raw=true',
     socials: {
       npm: {
         label: 'NPM',
