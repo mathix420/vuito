@@ -123,4 +123,4 @@ To reuse your validation template you have many solutions.
 1. Create a validation package in your monorepo.
 2. Create a private package in NPM, GitHub, GitLab, ...
 3. Any other solution that lets you share a js/ts file between projects.
-4. Maybe [SWAP](https://github.com/mathix420/swap) would be a good option for you
+4. Maybe [SWAP](https://github.com/mathix420/swap) would be a good option for you.
