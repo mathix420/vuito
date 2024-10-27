@@ -2,16 +2,18 @@ name: Release Draft
 
 on:
   push:
-    tags: [ "v*" ]
+    branches:
+      - master
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
-  tagged-release:
-    name: "Release Draft"
-    runs-on: "ubuntu-latest"
-
+  release-please:
+    runs-on: ubuntu-latest
     steps:
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - uses: googleapis/release-please-action@v4
         with:
-          draft: true
-          prerelease: false
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
+          release-type: node

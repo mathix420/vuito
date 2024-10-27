@@ -5,7 +5,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
+  workflow_call:
   workflow_dispatch:
 
 jobs:
@@ -13,10 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 'lts/*'
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
 
       - run: npm i
       - run: lerna run test:ci
