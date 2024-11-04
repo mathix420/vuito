@@ -30,5 +30,5 @@
     "@vuito/vue": "file:./packages/vue",
     "vuito": "file:./packages/vuito"
   },
-  "version": "2.1.1"
+  "version": "2.1.2"
 }
